@@ -2,7 +2,7 @@ import React from 'react'
 import POEMS from './poems'
 
 export default function PoemPage(props) {
-  const poem = POEMS.find(p =>
+  const poem = POEMS.find(p => /* Searches POEMS array for the poem with props.match.params.poemId */
     p.id === props.match.params.poemId
   )
   return (
